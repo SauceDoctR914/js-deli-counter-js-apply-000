@@ -1,5 +1,5 @@
 var katzDeli = []
-
+//[Laura, Gavin]
 function takeANumber(array, name) {
   array.push(name);
   if (array.length === 0) {
