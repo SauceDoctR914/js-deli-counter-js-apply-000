@@ -1,20 +1,19 @@
 var katzDeli = []
-//[Laura, Gavin]
-function takeANumber(array, name) {
-  array.push(name);
+//
+function takeANumber(array) {
   if (array.length === 0) {
     return "There is nobody in line"
   } else {
-    return `Welcome, ${name}. You are number ${array.length} in line.`
+    return `Welcome. You are number ${array.length} in line.`
   }
 }
 
 function nowServing (array) {
-  let customer = array[0];
+  
   if (array.length === 0) {
     return "There is nobody waiting to be served!";
   } else {
-    array.shift();
+    let customer = array.shift();
     return `Currently serving ${customer}.`
   }
 }
