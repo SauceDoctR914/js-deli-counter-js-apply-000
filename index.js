@@ -1,10 +1,12 @@
 var katzDeli = []
 //
+var people = 0;
 function takeANumber(array) {
+  people ++;
   if (array.length === 0) {
     return "There is nobody in line"
   } else {
-    return `Welcome. You are number ${array.length} in line.`
+    return `Welcome. You are number ${people} in line.`
   }
 }
 
